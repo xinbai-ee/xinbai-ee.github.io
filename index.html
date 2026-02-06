@@ -27,9 +27,8 @@
             return s.replace(/~and~/g, '&');
           }).join('?');
           var path = decoded.split('?');
-          window.history.replaceState(null, null,
-            l.pathname + path[0] + (path.length > 1 ? ('?' + path[1]) : '') + l.hash
-          );
+          var newPath = (l.pathname + path[0]).replace(/\/+/g, '/') + (path.length > 1 ? ('?' + path[1]) : '') + l.hash;
+          window.history.replaceState(null, null, newPath);
         }
       })();
     </script>
