@@ -1,0 +1,575 @@
+/* ========================================
+   Background Page Styles
+   ======================================== */
+
+.background-page {
+  background: var(--color-bg);
+}
+
+/* ─── Header ────────────────────────────── */
+.bg-header {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg-header-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.bg-header-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    170deg,
+    #0a0f1e 0%,
+    #0f1729 30%,
+    #1a2332 60%,
+    #1e3a5f 100%
+  );
+}
+
+.bg-header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.bg-header-title {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.bg-header-subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.bg-header-hint {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.82rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* ─── Timeline Section ──────────────────── */
+.timeline-section {
+  position: relative;
+}
+
+.timeline-viewport {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Parallax Backgrounds */
+.timeline-backgrounds {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.timeline-bg {
+  position: absolute;
+  inset: -40px;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: none;
+}
+
+.timeline-bg.timeline-bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 36, 0.7) 0%,
+    rgba(26, 35, 50, 0.75) 50%,
+    rgba(15, 23, 36, 0.5) 100%
+  );
+  z-index: 1;
+}
+
+/* ─── Arc Dial ──────────────────────────── */
+.arc-dial {
+  position: absolute;
+  left: 3%;
+  top: 6%;
+  bottom: 14%;
+  width: 150px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.arc-dial svg {
+  flex: 1;
+  width: 100%;
+  overflow: visible;
+}
+
+/* Scale markings */
+.arc-scale-mark {
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1;
+}
+
+.arc-scale-mark.major {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 1.5;
+}
+
+/* Arc path */
+.arc-track {
+  stroke: rgba(200, 168, 78, 0.12);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.arc-progress {
+  stroke: var(--color-accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px rgba(200, 168, 78, 0.4));
+}
+
+/* Markers */
+.arc-marker {
+  fill: #4a5568;
+  transition:
+    r 0.3s ease,
+    opacity 0.3s ease,
+    fill 0.3s ease;
+}
+
+/* Year labels on the arc */
+.arc-year-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: #8a9ab5;
+  opacity: 0.2;
+  transition:
+    opacity 0.3s ease,
+    fill 0.3s ease;
+}
+
+.arc-year-clickable {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.arc-year-clickable:hover {
+  fill: #c8a84e !important;
+  opacity: 1 !important;
+}
+
+/* Active indicator (glowing dot) */
+.arc-indicator {
+  fill: rgba(200, 168, 78, 0.25);
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(200, 168, 78, 0.5));
+  animation: indicator-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes indicator-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Year display below arc */
+.arc-year-display {
+  text-align: center;
+  padding-top: 0.8rem;
+}
+
+.arc-year-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.1;
+}
+
+.arc-year-category {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 0.2rem;
+}
+
+/* ─── Timeline Cards ────────────────────── */
+.timeline-cards-container {
+  position: relative;
+  margin-left: 24%;
+  width: 52%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.timeline-card {
+  position: absolute;
+  width: 100%;
+  max-width: 640px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2.5rem 2.75rem;
+  color: #fff;
+  will-change: transform, opacity, filter;
+  transform-origin: left center;
+  transition:
+    background 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.timeline-card.active {
+  background: rgba(200, 200, 200, 0.2);
+  border-color: rgba(200, 168, 78, 0.35);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25),
+    0 0 40px rgba(200, 168, 78, 0.06);
+}
+
+/* Card header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card-year-badge {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: rgba(200, 168, 78, 0.12);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.card-category-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}
+
+/* Card content */
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.card-institution {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 1rem;
+}
+
+.card-institution svg {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.25rem;
+}
+
+/* Tags */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(200, 168, 78, 0.85);
+  background: rgba(200, 168, 78, 0.08);
+  border: 1px solid rgba(200, 168, 78, 0.15);
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+/* See more button */
+.card-see-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: rgba(200, 168, 78, 0.12);
+  border: 1px solid rgba(200, 168, 78, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.card-see-more:hover {
+  background: rgba(200, 168, 78, 0.2);
+  border-color: rgba(200, 168, 78, 0.5);
+  color: #e6c04a;
+}
+
+/* ─── Progress bar at bottom ────────────── */
+.timeline-progress-bar {
+  position: absolute;
+  bottom: 2rem;
+  left: 16%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.progress-track {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent);
+  border-radius: 1px;
+  transform-origin: left center;
+  transform: scaleX(0);
+  box-shadow: 0 0 6px rgba(200, 168, 78, 0.4);
+}
+
+/* ─── Projects Section ──────────────────── */
+.projects-section {
+  padding: var(--section-padding) 0 calc(var(--section-padding) + 1rem);
+  background: var(--color-bg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.8rem;
+  background: var(--color-card-bg);
+  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-normal);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(200, 168, 78, 0.25);
+}
+
+.project-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.project-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.project-title-row h3 {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.project-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.project-stars svg {
+  color: var(--color-accent);
+}
+
+.project-description {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.tech-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: rgba(30, 58, 95, 0.07);
+  border: 1px solid rgba(30, 58, 95, 0.12);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.project-link:hover {
+  color: var(--color-accent);
+}
+
+/* ─── Responsive ────────────────────────── */
+@media (max-width: 1024px) {
+  .arc-dial {
+    left: 2%;
+    width: 90px;
+  }
+
+  .timeline-cards-container {
+    margin-left: 14%;
+    width: 58%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-header {
+    height: 50vh;
+    min-height: 320px;
+  }
+
+  .arc-dial {
+    display: none;
+  }
+
+  .timeline-cards-container {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .timeline-card {
+    padding: 1.5rem;
+    transform-origin: center;
+  }
+
+  .timeline-progress-bar {
+    left: 5%;
+    right: 5%;
+  }
+}
