@@ -1,0 +1,17 @@
+/* ========================================
+   Experience Page
+   ======================================== */
+
+.experience-page {
+  background: var(--color-bg);
+}
+
+.exp-header {
+  /* Uses .bg-header from Background.css */
+}
+
+.exp-header-title,
+.exp-header-subtitle,
+.exp-header-hint {
+  /* Inherit from .bg-header-title etc. via combined classes */
+}

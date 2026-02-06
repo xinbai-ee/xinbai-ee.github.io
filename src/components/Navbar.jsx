@@ -45,6 +45,13 @@ const Navbar = () => {
           >
             Background
           </NavLink>
+          <NavLink
+            to="/experience"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={() => setIsMobileOpen(false)}
+          >
+            Experience
+          </NavLink>
           <a
             href="/cv.pdf"
             target="_blank"

@@ -50,9 +50,9 @@ const Homepage = () => {
     <div className="homepage">
       <HeroSection />
       <AboutSection />
-      <InterestsSection />
-      <AchievementsSection />
-      <NewsSection />
+      {/* <InterestsSection /> */}
+      {/* <AchievementsSection /> */}
+      {/* <NewsSection /> */}
     </div>
   )
 }
