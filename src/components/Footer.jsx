@@ -1,18 +1,18 @@
-import { Mail, MapPin, Phone, Github, Linkedin, Globe, BookOpen } from 'lucide-react'
+// import { Mail, MapPin, Phone, Github, Linkedin, Globe, BookOpen } from 'lucide-react'
 import { personalData } from '../data/personalData'
 import './Footer.css'
 
-const iconMap = {
-  github: Github,
-  linkedin: Linkedin,
-  globe: Globe,
-  scholar: BookOpen,
-}
+// const iconMap = {
+//   github: Github,
+//   linkedin: Linkedin,
+//   globe: Globe,
+//   scholar: BookOpen,
+// }
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
-      <div className="footer-grid">
+      {/* <div className="footer-grid">
         <div className="footer-section footer-brand">
           <h3 className="footer-name">{personalData.name}</h3>
           <p className="footer-title">{personalData.title}</p>
@@ -59,7 +59,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="footer-divider" />
+      <div className="footer-divider" /> */}
 
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} {personalData.name}. All rights reserved.</p>

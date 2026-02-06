@@ -63,14 +63,21 @@ const HeroSection = () => {
 
   useGSAP(
     () => {
+      /* Set initial hidden state for all animated elements */
+      gsap.set('.hero-avatar-wrapper', { autoAlpha: 0, scale: 0.8 })
+      gsap.set('.hero-name', { autoAlpha: 0, y: 30 })
+      gsap.set('.hero-title-text', { autoAlpha: 0, y: 20 })
+      gsap.set('.hero-institution', { autoAlpha: 0, y: 20 })
+      gsap.set('.hero-social a', { autoAlpha: 0, y: 15 })
+      gsap.set('.hero-stats .stat-item', { autoAlpha: 0, y: 20 })
+
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
-      tl.from('.hero-avatar-wrapper', { scale: 0.8, opacity: 0, duration: 0.8 })
-        .from('.hero-name', { y: 30, opacity: 0, duration: 0.7 }, '-=0.4')
-        .from('.hero-title-text', { y: 20, opacity: 0, duration: 0.6 }, '-=0.3')
-        .from('.hero-institution', { y: 20, opacity: 0, duration: 0.5 }, '-=0.3')
-        .from('.hero-social a', { y: 15, opacity: 0, duration: 0.4, stagger: 0.08 }, '-=0.2')
-        .from('.hero-stats .stat-item', { y: 20, opacity: 0, duration: 0.4, stagger: 0.1 }, '-=0.2')
-        .from('.hero-scroll-hint', { opacity: 0, duration: 0.6 }, '-=0.1')
+      tl.to('.hero-avatar-wrapper', { autoAlpha: 1, scale: 1, duration: 0.8 })
+        .to('.hero-name', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.4')
+        .to('.hero-title-text', { autoAlpha: 1, y: 0, duration: 0.6 }, '-=0.3')
+        .to('.hero-institution', { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.3')
+        .to('.hero-social a', { autoAlpha: 1, y: 0, duration: 0.4, stagger: 0.08 }, '-=0.2')
+        .to('.hero-stats .stat-item', { autoAlpha: 1, y: 0, duration: 0.4, stagger: 0.1 }, '-=0.2')
     },
     { scope: heroRef }
   )
