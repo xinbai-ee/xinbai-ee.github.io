@@ -11,6 +11,7 @@ import {
 import { timelineEvents } from "../data/timelineData";
 import { projects } from "../data/projectsData";
 import ArcDialTimeline from "../components/ArcDialTimeline";
+import SafeHtml from "../components/SafeHtml";
 import "./Background.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -122,7 +123,7 @@ const ProjectsSection = () => {
                     </span>
                   )}
                 </div>
-                <p className="project-description">{project.description}</p>
+                <SafeHtml html={project.description} tagName="p" className="project-description" />
                 <div className="project-tech">
                   {project.technologies.map((tech, j) => (
                     <span key={j} className="tech-tag">

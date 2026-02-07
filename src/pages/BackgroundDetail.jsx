@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { MapPin, ArrowLeft } from "lucide-react";
 import { timelineEvents } from "../data/timelineData";
+import SafeHtml from "../components/SafeHtml";
 import "./BackgroundDetail.css";
 
 const BackgroundDetail = () => {
@@ -52,7 +53,7 @@ const BackgroundDetail = () => {
             </div>
           )}
           <div className="detail-description">
-            <p>{event.description}</p>
+            <SafeHtml html={event.description} tagName="div" />
           </div>
           {event.tags && event.tags.length > 0 && (
             <div className="detail-tags">

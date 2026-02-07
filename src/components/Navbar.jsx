@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FileText, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
+import { personalData } from "../data/personalData";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,8 +18,8 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <NavLink to="/" className="nav-logo">
-          <span className="logo-accent">A.</span>
-          <span className="logo-text">Chen</span>
+          <span className="logo-accent">{personalData.firstName[0]}.</span>
+          <span className="logo-text">{personalData.lastName}</span>
         </NavLink>
 
         <button

@@ -2,17 +2,15 @@ export const personalData = {
   name: "Xin Bai",
   firstName: "Xin",
   lastName: "Bai",
-  title: "Mechanical Engineering, Electrical & Computer Engineering",
+  title: "Mechanical Engineering<br>Electrical & Computer Engineering",
   institution: "University Of Utah",
   department: "Department of Computer Science",
   email: "u1299165@gmail.com",
   phone: "+1 (801) 600-6681",
   direction: "UAVs/Robotics/AI",
-  bio: `I am a hardware/software co-designer with a strong passion for UAVs and robotics, bringing extensive field experience into every stage of system development. Rather than defining myself by a list of skills, I focus on how I integrate hands-on deployment experience, system-level thinking, and cross-disciplinary engineering knowledge to solve real-world problems and create tangible value.
-
-My approach centers on understanding complex electromechanical and embedded systems holistically—not only in controlled lab settings, but in real operational environments. I combine hardware design, software development, sensor integration, and control optimization with on-site testing, troubleshooting, and iterative refinement to deliver practical, reliable, and field-ready solutions.
-
-Through repeated and strongly field deployments experience, system bring-up, and real-world validation, I have developed a strong ability to diagnose issues under pressure, adapt to environmental constraints, and translate operational feedback into technical improvements. I am driven by results, grounded in engineering rigor, and committed to turning ideas into measurable technical impact through hands-on execution..`,
+  bio: `I am a hardware/software co-designer with a strong passion for UAVs and robotics, bringing extensive field experience into every stage of system development. Rather than defining myself by a list of skills, I focus on how I integrate hands-on deployment experience, system-level thinking, and cross-disciplinary engineering knowledge to solve real-world problems and create tangible value.\n
+My approach centers on understanding complex electromechanical and embedded systems holistically—not only in controlled lab settings, but in real operational environments. I combine hardware design, software development, sensor integration, and control optimization with on-site testing, troubleshooting, and iterative refinement to deliver practical, reliable, and field-ready solutions.\n
+Through repeated and strongly field deployments experience, system bring-up, and real-world validation, I have developed a strong ability to diagnose issues under pressure, adapt to environmental constraints, and translate operational feedback into technical improvements. I am driven by results, grounded in engineering rigor, and committed to turning ideas into measurable technical impact through hands-on execution.`,
   shortBio: "Researching the intersection of machine learning, NLP, and human-computer interaction to build interpretable AI systems.",
 
   socialLinks: [

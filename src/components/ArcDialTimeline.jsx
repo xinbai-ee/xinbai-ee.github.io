@@ -5,6 +5,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight } from "lucide-react";
+import SafeHtml from "./SafeHtml";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -357,7 +358,7 @@ const ArcDialTimeline = ({ events, detailPath }) => {
                   <span>{event.institution}</span>
                 </div>
               )}
-              <p className="card-description">{event.description}</p>
+              <SafeHtml html={event.description} tagName="p" className="card-description" />
               {event.tags && (
                 <div className="card-tags">
                   {event.tags.map((tag, j) => (

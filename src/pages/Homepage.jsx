@@ -20,6 +20,7 @@ import {
   Calendar,
 } from 'lucide-react'
 import { personalData } from '../data/personalData'
+import SafeHtml from '../components/SafeHtml'
 import './Homepage.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -86,7 +87,7 @@ const HeroSection = () => {
     <section className="hero" ref={heroRef}>
       <div className="hero-bg">
         <div className="hero-bg-gradient" />
-        <div className="hero-bg-pattern" />
+        <div className="hero-bg-pattern" /> 
       </div>
 
       <div className="hero-content">
@@ -100,7 +101,7 @@ const HeroSection = () => {
         </div>
 
         <h1 className="hero-name">{personalData.name}</h1>
-        <p className="hero-title-text">{personalData.title}</p>
+        <SafeHtml html={personalData.title} tagName="p" className="hero-title-text" />
         <p className="hero-institution">
           <MapPin size={16} />
           {personalData.institution}
@@ -168,7 +169,9 @@ const AboutSection = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-grid">
           <div className="about-text">
-            <p>{personalData.bio}</p>
+            {personalData.bio.split('\n').map((line) => (
+              <SafeHtml html={line} tagName="p" className="about-text-content" />
+            ))}
           </div>
           <div className="about-details">
             <div className="detail-item">
@@ -181,8 +184,8 @@ const AboutSection = () => {
             <div className="detail-item">
               <MapPin size={18} />
               <div>
-                <span className="detail-label">Office</span>
-                <span>{personalData.office}</span>
+                <span className="detail-label">Direction</span>
+                <span>{personalData.direction}</span>
               </div>
             </div>
             <div className="detail-item">
@@ -221,7 +224,7 @@ const InterestsSection = () => {
     <section className="interests-section" ref={sectionRef}>
       <div className="section-container">
         <h2 className="section-title">Research Interests</h2>
-        <p className="section-subtitle">{personalData.shortBio}</p>
+        <SafeHtml html={personalData.shortBio} tagName="p" className="section-subtitle" />
         <div className="interests-grid">
           {personalData.researchInterests.map((interest, i) => {
             const Icon = interestIconMap[interest.icon] || Brain
@@ -231,7 +234,7 @@ const InterestsSection = () => {
                   <Icon size={24} />
                 </div>
                 <h3>{interest.title}</h3>
-                <p>{interest.description}</p>
+                <SafeHtml html={interest.description} tagName="p" />
               </div>
             )
           })}
@@ -275,7 +278,7 @@ const AchievementsSection = () => {
               </div>
               <div className="achievement-content">
                 <h3>{a.title}</h3>
-                <p>{a.description}</p>
+                <SafeHtml html={a.description} tagName="p" />
               </div>
             </div>
           ))}
@@ -317,7 +320,7 @@ const NewsSection = () => {
                 <Calendar size={14} />
                 {item.date}
               </span>
-              <p className="news-text">{item.text}</p>
+              <SafeHtml html={item.text} tagName="p" className="news-text" />
             </div>
           ))}
         </div>

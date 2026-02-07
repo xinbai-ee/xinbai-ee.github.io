@@ -211,12 +211,13 @@
   text-align: center;
 }
 
+.about-text-content,
 .about-text p {
   max-width: 580px;
   font-size: 1.05rem;
   line-height: 1.85;
   color: #ccc;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   text-align: justify;
 }
 
