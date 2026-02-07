@@ -8,11 +8,12 @@ export const timelineEvents = [
       "End-to-end UAV stabilization system integrating IMU, GPS, and airspeed sensors to infer wind conditions and adapt attitude control in real time.",
     detailDescription:
       "This Project focused on the end-to-end development of a wind-aware UAV stabilization system,progressing from initial concept and simulation to real-world experimental validation. I desgined a multi-sensor fusion framework that integrated IMU,GPS,and airspeed sensors to estimate wind direction and wind speed relative to the vehicle.Using this information, the UAV dynamically adjusted its attitude control strategy in real time to compensate for wind-induced disturbances",
+      "The system was first evaluated in simulation to validate feasibility and tune control parameters, followed by hardware implementation and field testing. through iterative refinement of sensor fusion logic and control responses, the UAV demoonstrated significantly improved robustness under varying wind conditions.Experimental results showed a 35% improvement in flight stability, confirming the effectiveness of combining environmental sensing with adaptive attitude control for eral-world autonomous flight",
     bullets: [
       "Implemented end-to-end sensor integration across GPS,IMU,and (MATEDKSYS ASPD-4525)air speed sensor,improving state estimation fidelity and flight robustness",
       "Achieved controllability by 35% improvement in turbulent airflow",
-      "Validated through both simulation and experimental testing",
-      "Implemented adaptive attitude control algorithms",
+      "Designed and Validated real-time wind estimation and sensor-fusion algorithms in Matlab",
+      "Delivered Low-Level firmware and middleware integrations within PX4 and Ardupilot.",
     ],
     tags: ["Ardupilot(APM)", "VScode", "Linux", "ROS2", "Gazebo", "PX4", "Slam"],
     bgGradient: "linear-gradient(135deg, #0f1729 0%, #1e3a5f 50%, #c8a84e 100%)",
@@ -26,7 +27,7 @@ export const timelineEvents = [
     institution: "University of Utah",
     category: "Project",
     cardDescription:
-      "End-to-end design of a Class-E amplifier enabling efficient wireless power delivery to a remote microcontroller.",
+      "End-to-end design of a Class-E amplifier enabling efficient wireless power delivery to a long distance wireless power supply.",
     detailDescription:
       "Collaborated with Prof. Darrin Young on the end-to-end design and validation of a Class-E amplifier enabling efficient wireless power delivery to a remote microcontroller, gaining hands-on experience in RF power electronics and resonant system design. This project deepened my understanding of high-frequency circuit behavior and efficiency optimization.",
     bullets: [
@@ -35,7 +36,7 @@ export const timelineEvents = [
       "Gained expertise in RF power electronics",
       "Optimized resonant system for maximum efficiency",
     ],
-    tags: ["Pspice", "RF System", "Power Electronics"],
+    tags: ["Pspice", "RF System", "Power Electronics", "Algorithms"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
     bgImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
     contentImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
