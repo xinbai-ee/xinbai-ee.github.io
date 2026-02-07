@@ -86,6 +86,12 @@ const HeroSection = () => {
   return (
     <section className="hero" ref={heroRef}>
       <div className="hero-bg">
+        {personalData.heroImage && (
+          <div 
+            className="hero-bg-image" 
+            style={{ backgroundImage: `url(${personalData.heroImage})` }} 
+          />
+        )}
         <div className="hero-bg-gradient" />
         <div className="hero-bg-pattern" /> 
       </div>
@@ -93,9 +99,17 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-avatar-wrapper">
           <div className="hero-avatar">
-            <div className="avatar-placeholder">
-              <span>{personalData.firstName[0]}{personalData.lastName[0]}</span>
-            </div>
+            {personalData.avatarImage ? (
+              <img 
+                src={personalData.avatarImage} 
+                alt={personalData.name}
+                className="avatar-image"
+              />
+            ) : (
+              <div className="avatar-placeholder">
+                <span>{personalData.firstName[0]}{personalData.lastName[0]}</span>
+              </div>
+            )}
           </div>
           <div className="avatar-ring" />
         </div>

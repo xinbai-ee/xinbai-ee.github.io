@@ -26,8 +26,8 @@ const BackgroundDetail = () => {
     <section
       className="background-detail"
       style={
-        event.image
-          ? { backgroundImage: `url(${event.image})` }
+        event.bgImage
+          ? { backgroundImage: `url(${event.bgImage})` }
           : { background: event.bgGradient }
       }
     >
@@ -52,8 +52,13 @@ const BackgroundDetail = () => {
               <span>{event.institution}</span>
             </div>
           )}
+          {event.contentImage && (
+            <div className="detail-image-wrapper">
+              <img src={event.contentImage} alt={event.title} className="detail-image" />
+            </div>
+          )}
           <div className="detail-description">
-            <SafeHtml html={event.description} tagName="div" />
+            <SafeHtml html={event.detailDescription} tagName="div" />
           </div>
           {event.tags && event.tags.length > 0 && (
             <div className="detail-tags">

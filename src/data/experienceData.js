@@ -9,8 +9,11 @@ export const experienceEvents = [
     tags: ["Experimental Validation", "System Integration", "Control & Estimation"],
     bgGradient:
       "linear-gradient(135deg, #1a2332 0%, #1e3a5f 50%, #2962ff 100%)",
-    image:
+    bgImage:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    contentImage:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    showContentImageInCard: false,
   },
   {
     year: 2023,
@@ -22,8 +25,11 @@ export const experienceEvents = [
     tags: ["Troubleshooting", "Diagnostics", "Optimization"],
     bgGradient:
       "linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #2c3e50 100%)",
-    image:
+    bgImage:
       "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
+    contentImage:
+      "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
+    showContentImageInCard: false,
   },
   {
     year: 2023,
@@ -35,8 +41,11 @@ export const experienceEvents = [
     tags: ["Deplyment", "Coordination", "Efficiency"],
     bgGradient:
       "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #533483 100%)",
-    image:
+    bgImage:
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
+    contentImage:
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
+    showContentImageInCard: false,
   },
   {
     year: 2022,
@@ -48,8 +57,11 @@ export const experienceEvents = [
     tags: ["CSWA", "CSWP", ],
     bgGradient:
       "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
-    image:
+    bgImage:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+    contentImage:
+      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+    showContentImageInCard: false,
   },
   {
     year: 2021,
@@ -61,7 +73,10 @@ export const experienceEvents = [
     tags: ["AutoCad", "SolidWorks", "Linux","BOM","Microsoft"],
     bgGradient:
       "linear-gradient(135deg, #0f1729 0%, #1e3a5f 50%, #c8a84e 100%)",
-    image:
+    bgImage:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+    contentImage:
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+    showContentImageInCard: false,
   },
 ];

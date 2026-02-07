@@ -136,6 +136,8 @@
 
   .nav-links {
     position: fixed;
+    height: fit-content;
+    padding: 5rem 0 2.5rem;
     top: 0;
     left: 0;
     right: 0;

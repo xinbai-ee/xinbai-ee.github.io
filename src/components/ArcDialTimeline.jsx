@@ -230,11 +230,11 @@ const ArcDialTimeline = ({ events, detailPath }) => {
           {events.map((event, i) => (
             <div
               key={i}
-              className={`timeline-bg ${event.image ? "timeline-bg-image" : ""}`}
+              className={`timeline-bg ${event.bgImage ? "timeline-bg-image" : ""}`}
               ref={(el) => setBgRef(el, i)}
               style={
-                event.image
-                  ? { backgroundImage: `url(${event.image})` }
+                event.bgImage
+                  ? { backgroundImage: `url(${event.bgImage})` }
                   : { background: event.bgGradient }
               }
             />
@@ -358,7 +358,23 @@ const ArcDialTimeline = ({ events, detailPath }) => {
                   <span>{event.institution}</span>
                 </div>
               )}
-              <SafeHtml html={event.description} tagName="p" className="card-description" />
+              {event.showContentImageInCard && event.contentImage && (
+                <div className="card-image-wrapper">
+                  <img src={event.contentImage} alt={event.title} className="card-image" />
+                </div>
+              )}
+              <SafeHtml 
+                html={event.cardDescription || event.description} 
+                tagName="p" 
+                className="card-description" 
+              />
+              {event.bullets && event.bullets.length > 0 && (
+                <ul className="card-bullets">
+                  {event.bullets.map((bullet, j) => (
+                    <li key={j}>{bullet}</li>
+                  ))}
+                </ul>
+              )}
               {event.tags && (
                 <div className="card-tags">
                   {event.tags.map((tag, j) => (
