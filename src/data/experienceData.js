@@ -1,77 +1,64 @@
 export const experienceEvents = [
   {
-    year: 2016,
-    title: "Research Intern — Machine Translation",
-    institution: "Google Brain, Mountain View",
-    category: "Industry",
+    year: 2025,
+    title: "Research Volunteer",
+    institution: "Utah,United States",
+    category: "University of Utah",
     description:
-      "Contributed to the development of attention mechanisms for machine translation. Co-authored a paper on multi-head attention alignment that informed later Transformer architecture improvements.",
-    tags: ["Attention Mechanisms", "Machine Translation", "Transformers"],
+      "Volunteered in Professor Kim’s research group, contributing to ongoing research through hands-on engineering support and experimental validation. My work focused on assisting with system integration, data collection, and performance evaluation for research projects involving sensing, control, and autonomous systems. This experience strengthened my ability to work in a research-driven environment, translate theoretical concepts into practical implementation, and collaborate closely with faculty on technically rigorous projects.",
+    tags: ["Experimental Validation", "System Integration", "Control & Estimation"],
     bgGradient:
       "linear-gradient(135deg, #1a2332 0%, #1e3a5f 50%, #2962ff 100%)",
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    year: 2017,
-    title: "Graduate Research Assistant",
-    institution: "Stanford University",
-    category: "Research",
+    year: 2023,
+    title: "Field deployment operator ",
+    institution: "Guizhou, China",
+    category: "AECC Guizhou Liyang Aero-Engine Co",
     description:
-      "Began doctoral research under Prof. Sarah Mitchell on interpretable neural network architectures. Developed attention visualization tools adopted by over 200 research groups worldwide.",
-    tags: ["Interpretability", "Attention Visualization", "Neural Architectures"],
+      "Provided on-site hardware and software engineering support for industrial laser marking systems used in aerospace turbine blade production. Responded to critical issues by arriving on site within 24 hours, performing rapid system diagnostics, component replacement, and full system calibration to restore and optimize machine performance. Worked closely with site leads and production managers to communicate technical findings, align corrective actions, and ensure minimal production disruption. Through systematic troubleshooting and parameter optimization, successfully improved QR code engraving accuracy to meet the customer’s stringent requirement of ±3 µm precision, enabling stable, repeatable marking quality and strengthening long-term customer confidence.",
+    tags: ["Troubleshooting", "Diagnostics", "Optimization"],
     bgGradient:
       "linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #2c3e50 100%)",
     image:
       "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    year: 2019,
-    title: "Research Scientist (Summer)",
-    institution: "DeepMind, London",
-    category: "Industry",
+    year: 2023,
+    title: "Field deployment operator",
+    institution: "Guizhou, China",
+    category: "BYD",
     description:
-      "Summer research on structured attention and hierarchical reasoning. Collaborated on tree-structured attention mechanisms that led to NeurIPS 2019 Best Paper.",
-    tags: ["Structured Attention", "DeepMind", "Research"],
+      "Worked closely with site leads and production managers to optimize the assembly-line workflow and deploy laser marking systems within a high-throughput manufacturing environment. Collaborated with responsible stakeholders to analyze existing bottlenecks, align technical solutions with production requirements, and implement process-level improvements. Through systematic optimization and equipment deployment, reduced machine maintenance frequency from once every three months to once per year, significantly improving system reliability. These efforts resulted in an overall 19% increase in production efficiency, while ensuring stable, repeatable marking quality and smoother long-term operation of the production line.",
+    tags: ["Deplyment", "Coordination", "Efficiency"],
     bgGradient:
       "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #533483 100%)",
     image:
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    year: 2021,
-    title: "Postdoctoral Fellow",
-    institution: "MIT CSAIL",
-    category: "Research",
+    year: 2022,
+    title: "CSWA & CSWP certification",
+    institution: "SolidWorks",
+    category: "Certification Lisense",
     description:
-      "Conducted postdoctoral research on human-AI collaboration systems. Developed the 'CogLoop' framework for human-in-the-loop training of language models, published at CHI 2021.",
-    tags: ["Human-AI Collaboration", "MIT CSAIL", "CogLoop"],
+      "Successfully earned both SolidWorks Certified SolidWorks Associate (CSWA) and Certified SolidWorks Professional (CSWP) certifications, demonstrating a strong command of parametric modeling, part and assembly design, and engineering drawing standards. These certifications validated my ability to translate design requirements into accurate, manufacturable CAD models and reflected a progressive advancement from foundational CAD proficiency to professional-level mechanical design capability.",
+    tags: ["CSWA", "CSWP", ],
     bgGradient:
       "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
     image:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    year: 2022,
-    title: "Assistant Professor",
-    institution: "Stanford University, Computer Science",
-    category: "Career",
+    year: 2021,
+    title: "Technical Assistant",
+    institution: "Chongqing, China",
+    category: "Eastward Technology Company",
     description:
-      "Joined Stanford as Assistant Professor and established the Intelligent Systems Laboratory (ISL). Secured $2.1M in initial funding from NSF and DARPA for research on interpretable AI systems.",
-    tags: ["Faculty", "ISL Lab", "Stanford"],
-    bgGradient:
-      "linear-gradient(135deg, #1a2a3a 0%, #2c4a6a 50%, #3a7ca5 100%)",
-    image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    year: 2024,
-    title: "Associate Professor (Tenured)",
-    institution: "Stanford University",
-    category: "Career",
-    description:
-      "Promoted to Associate Professor with tenure. The ISL lab has grown to 12 members and published 23 papers in top venues. Named a Sloan Research Fellow in the same year.",
-    tags: ["Tenure", "Sloan Fellowship", "Leadership"],
+      "Provided engineering design and technical support for ongoing equipment development projects, assisting the company in refining mechanical designs and optimizing component-level details to improve performance and manufacturability. Worked closely with design and production teams to iterate on part designs, address implementation issues, and support successive design submissions. Prepared detailed technical documentation, including design reports and bills of materials (BOM), to ensure clear communication and smooth handoff between design, manufacturing, and deployment stages. Through repeated design iterations and structured documentation, contributed to successful equipment updates and generational upgrades, supporting the company’s continuous improvement and product evolution efforts.",
+    tags: ["AutoCad", "SolidWorks", "Linux","BOM","Microsoft"],
     bgGradient:
       "linear-gradient(135deg, #0f1729 0%, #1e3a5f 50%, #c8a84e 100%)",
     image:
