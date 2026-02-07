@@ -7,10 +7,10 @@ export const timelineEvents = [
     cardDescription:
       "End-to-end UAV stabilization system integrating IMU, GPS, and airspeed sensors to infer wind conditions and adapt attitude control in real time.",
     detailDescription:
-      "Designed and validated an end-to-end UAV stabilization system integrating IMU, GPS, and airspeed sensors to infer wind conditions and adapt attitude control in real time, achieving a 35% improvement in flight stability through simulation and experimental testing. The project involved extensive work with flight controllers, sensor fusion algorithms, and real-time control systems.",
+      "This Project focused on the end-to-end development of a wind-aware UAV stabilization system,progressing from initial concept and simulation to real-world experimental validation. I desgined a multi-sensor fusion framework that integrated IMU,GPS,and airspeed sensors to estimate wind direction and wind speed relative to the vehicle.Using this information, the UAV dynamically adjusted its attitude control strategy in real time to compensate for wind-induced disturbances",
     bullets: [
-      "Integrated IMU, GPS, and airspeed sensors for real-time wind inference",
-      "Achieved 35% improvement in flight stability",
+      "Implemented end-to-end sensor integration across GPS,IMU,and (MATEDKSYS ASPD-4525)air speed sensor,improving state estimation fidelity and flight robustness",
+      "Achieved controllability by 35% improvement in turbulent airflow",
       "Validated through both simulation and experimental testing",
       "Implemented adaptive attitude control algorithms",
     ],
