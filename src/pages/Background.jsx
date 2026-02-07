@@ -20,7 +20,7 @@ const Background = () => {
     <div className="background-page">
       <BackgroundHeader />
       <ArcDialTimeline events={timelineEvents} detailPath="/background/event" />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
     </div>
   );
 };

@@ -120,14 +120,14 @@ const HeroSection = () => {
           </a>
         </div>
 
-        <div className="hero-stats">
+        {/* <div className="hero-stats">
           {personalData.stats.map((stat) => (
             <div className="stat-item" key={stat.label}>
               <span className="stat-value">{stat.value}</span>
               <span className="stat-label">{stat.label}</span>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="hero-scroll-hint">
           <ChevronDown size={20} />

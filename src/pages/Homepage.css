@@ -8,7 +8,7 @@
   height: 60vh;
   min-height: 400px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
@@ -190,11 +190,16 @@
 /* ─── About Section ─────────────────────── */
 .about-section {
   padding: var(--section-padding) 0;
-  background: var(--color-bg);
+  background: linear-gradient(
+    160deg,
+    #0a0f1e 0%,
+    #0f1729 100%
+  );
 }
 
 .about-section .section-title {
   text-align: center;
+  color: #e5e5e5;
 }
 
 .about-grid {
@@ -210,7 +215,7 @@
   max-width: 580px;
   font-size: 1.05rem;
   line-height: 1.85;
-  color: var(--color-text);
+  color: #ccc;
   margin: 0 auto;
   text-align: justify;
 }
@@ -258,7 +263,7 @@
 .detail-item a,
 .detail-item span:not(.detail-label) {
   font-size: 0.92rem;
-  color: var(--color-text);
+  color: #aaa;
 }
 
 .detail-item a:hover {
