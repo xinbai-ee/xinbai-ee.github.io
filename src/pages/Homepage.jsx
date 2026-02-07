@@ -18,6 +18,7 @@ import {
   ChevronDown,
   Newspaper,
   Calendar,
+  Phone,
 } from 'lucide-react'
 import { personalData } from '../data/personalData'
 import SafeHtml from '../components/SafeHtml'
@@ -203,10 +204,10 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="detail-item">
-              <BookOpen size={18} />
+              <Phone size={18} />
               <div>
-                <span className="detail-label">Department</span>
-                <span>{personalData.department}</span>
+                <span className="detail-label">Phone</span>
+                <span>{personalData.phone}</span>
               </div>
             </div>
           </div>
