@@ -8,7 +8,7 @@ export const timelineEvents = [
       "End-to-end UAV stabilization system integrating IMU, GPS, and airspeed sensors to infer wind conditions and adapt attitude control in real time.",
     detailDescription:
       "This Project focused on the end-to-end development of a wind-aware UAV stabilization system,progressing from initial concept and simulation to real-world experimental validation. I desgined a multi-sensor fusion framework that integrated IMU,GPS,and airspeed sensors to estimate wind direction and wind speed relative to the vehicle.Using this information, the UAV dynamically adjusted its attitude control strategy in real time to compensate for wind-induced disturbances",
-      "The system was first evaluated in simulation to validate feasibility and tune control parameters, followed by hardware implementation and field testing. through iterative refinement of sensor fusion logic and control responses, the UAV demoonstrated significantly improved robustness under varying wind conditions.Experimental results showed a 35% improvement in flight stability, confirming the effectiveness of combining environmental sensing with adaptive attitude control for eral-world autonomous flight",
+      <br>"The system was first evaluated in simulation to validate feasibility and tune control parameters, followed by hardware implementation and field testing. through iterative refinement of sensor fusion logic and control responses, the UAV demoonstrated significantly improved robustness under varying wind conditions.Experimental results showed a 35% improvement in flight stability, confirming the effectiveness of combining environmental sensing with adaptive attitude control for eral-world autonomous flight",
     bullets: [
       "Implemented end-to-end sensor integration across GPS,IMU,and (MATEDKSYS ASPD-4525)air speed sensor,improving state estimation fidelity and flight robustness",
       "Achieved controllability by 35% improvement in turbulent airflow",
@@ -27,16 +27,18 @@ export const timelineEvents = [
     institution: "University of Utah",
     category: "Project",
     cardDescription:
-      "End-to-end design of a Class-E amplifier enabling efficient wireless power delivery to a long distance wireless power supply.",
+      "End-to-end design of a Class-E amplifier enabling efficient wireless power delivery to the long distance wireless power supply.",
     detailDescription:
-      "Collaborated with Prof. Darrin Young on the end-to-end design and validation of a Class-E amplifier enabling efficient wireless power delivery to a remote microcontroller, gaining hands-on experience in RF power electronics and resonant system design. This project deepened my understanding of high-frequency circuit behavior and efficiency optimization.",
+      "Collaborated with Prof. Darrin Young on the end-to-end design and validation of a Class-E amplifier enabling efficient wireless power delivery to the wireless power supply.The project focused on designing a high-efficiency RF power stage and a resonant inductive coupling architecture to transmit energy across a physical gap without wired connections.",
+      <br>"I contributed to the complete engineering workflow, including circuit topology selection, component sizing, and resonant network design.The amplifier and coil system were first analyzed and optimized through SPICE simulation, followed by laboratory characterization of commercially available components to accounts for non-ideal behavior.Based on these results, the circuit was implemented on a custom PCB using off-the-shelf components",
+      <br>"The prototype system was experimentally tested to verify soft-switching behavioor, resonant operation, and stable power transfer to a remote load. The final implementation successfully demonstrated wireless power delivery sufficient to energize a target electronic system, validating both the circuit design and the inductive coupling approach. ThisProject strengthened my experience in RF power electronics, resonant systems, and hardware validation, and highlighted the importance of integrating simulation, measurement, and system-level testing in practical wireless power applications.",
     bullets: [
-      "Designed high-efficiency Class-E switching amplifier topology",
-      "Implemented wireless power transfer to remote microcontroller",
-      "Gained expertise in RF power electronics",
-      "Optimized resonant system for maximum efficiency",
+      "Led the deelopment of a Class-E RF power amplifier, integrating theoretical modeling, circuit simulation, and experimental validation",
+      "validated simulation results through hardware prototyping and RF measurements, correlating drain waveforms and efficiency with theoretical predictions and achieved 65% efficiency.",
+      "Enhanced efficiency and spectral purity via iterative component tuning and MOSFET switching analysis, improving real-world Class-E performance.",
+      "Optimized resonant system for maximum efficiency based on field experiment.",
     ],
-    tags: ["Pspice", "RF System", "Power Electronics", "Algorithms"],
+    tags: ["Pspice", "RF System", "Power Electronics", "Algorithms","Wireless charging"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
     bgImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
     contentImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
@@ -48,14 +50,16 @@ export const timelineEvents = [
     institution: "Utah Nanofab",
     category: "Project",
     cardDescription:
-      "MEMS micro pressure sensor with ~500 µm diaphragm achieving ~1.8 mV/kPa sensitivity over 0–100 kPa range.",
+      "Designed MEMS micro pressure sensor with ~500 µm diaphragm achieving ~1.8 mV/kPa sensitivity over 0–100 kPa range.",
     detailDescription:
-      "Independently designed and fabricated a MEMS micro pressure sensor with a ~500 µm diaphragm, achieving ~1.8 mV/kPa sensitivity over a 0–100 kPa range. Gained hands-on experience in nanofabrication, MEMS design, and experimental validation. The project involved cleanroom fabrication processes and precise calibration procedures.",
+      "Independently designed and fabricated a MEMS micro pressure sensor with a ~500 µm diaphragm, achieving ~1.8 mV/kPa sensitivity over a 0–100 kPa range.The project covered the complete workflow from device concept and layout to cleanroom fabrication,packaging,and experimental characterization.",
+      <br>"I developed the device structure based on pressure-to-strain transduction and translated the design into a manufacturable mask layout with consideration of membrane thickness, stress concentration, and process constraints.Fabrication was performed in a nanofabrication cleanroom environment, where I gained hands-on experience with process steps including pphotolithography alignment, thin-film deposition and etching to define the diaphragm and sensing features.I tracked process parameters and yield-impacting factors to ensure device integrity and repeatability",
+      <br>"Following fabrication, I carried out calibration adn characterization using controlled precise calibration procedures to map sensor output to applied pressure, analyzed measurement noise and drift, and validated performance against design expectations. This project strengthened my practical understanding of MEMS design,cleanroom process integration and experimental validation of micro-scale sensors",
     bullets: [
-      "Designed ~500 µm diaphragm structure for pressure sensing",
+      "Independently designed and fabricated a MEMS micro pressure sensor from concept to validation",
+      "Designed ~500 µm diaphragm structure for sensitivity and mechanical reliability",
       "Achieved ~1.8 mV/kPa sensitivity across 0–100 kPa range",
       "Performed cleanroom nanofabrication at Utah Nanofab",
-      "Conducted comprehensive experimental validation",
     ],
     tags: ["AutoCad", "Semiconductor", "MEMS", "Micro Sensor", "Comsol"],
     bgGradient: "linear-gradient(135deg, #1a2a3a 0%, #2c4a6a 50%, #3a7ca5 100%)",
@@ -69,14 +73,18 @@ export const timelineEvents = [
     institution: "University of Utah",
     category: "Laboratory",
     cardDescription:
-      "Three-stage amplifier design analyzing gain distribution, biasing stability, and inter-stage interactions.",
+      "Three-stage amplifier design and laboratory validation",
     detailDescription:
-      "Designed and tested a three-stage amplifier in the laboratory to analyze gain distribution, biasing stability, and inter-stage interactions. Evaluated overall system performance through experimental measurements, gaining hands-on experience with multi-stage analog circuit behavior and practical debugging of real-world non-ideal effects.",
+      "This project focused on the design and laboratory validation of a three-stage amplifier, with emphasis on understanding how individual amplification stages interact within a complete analog system. Each stage was designed to operate under stable biasing conditions while contributing to the overall gain adn signal integrity of the amplifier.",
+      <br>"The circuit was first analyzed and refined through theoreticcal calculations and simulation, followed by hands-on laboratory implementation.Experimental measurements were used to evaluate gain, signal distortion, and inter-stage loading efffects.Through iterative testing and adjustment, the amplifier achieved stable operatioon adn predictable performance across all stages.",
+      <br>"This project strengthened my understanding of multi-stage analog circuit behavior, practical viasing strategies, and the importancce of validating theoretical designs through real hardware measurements.",
+      
     bullets: [
-      "Analyzed gain distribution across three amplifier stages",
-      "Evaluated biasing stability and inter-stage coupling",
-      "Debugged real-world non-ideal effects",
-      "Compared simulation predictions with measured performance",
+      "Designed and analyzed a three-stage amplifier with stable biasing for each stage  ",
+      "Studied gain distribution and inter-stage loading effects in multi-stage analog circuits",
+      "Validated amplifier performance through laboratory measurements ",
+      "Investigated non-ideal effects including component tolerances and signal distortion",
+      "Gained hands-on experience in analog circuit debugging and validation",
     ],
     tags: ["PCB", "Python", "Pspice"],
     bgGradient: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
@@ -92,12 +100,13 @@ export const timelineEvents = [
     cardDescription:
       "MOSFET device behavior and amplifier circuits through simulation and hands-on laboratory validation.",
     detailDescription:
-      "Studied the behavior of MOSFET devices and amplifier circuits through a combination of circuit simulation and hands-on laboratory validation. Designed and analyzed biasing conditions and amplifier configurations in simulation, then implemented and tested the corresponding circuits in the lab to compare theoretical predictions with measured performance. Investigated discrepancies caused by non-ideal effects, component tolerances, and real device behavior.",
+      "Designed and implemented MOSFET-based amplifier circuits with a focus on practical performance and hardware validation. Selected device operating points and biasing networks to ensure stable operation under real component constraints, and verified design choices through circuit simulation. Built and debugged the amplifier circuits in the laboratory, performing systematic measurements to evaluate gain, bias stability, and signal integrity. Identified and addressed discrepancies between simulated and measured behavior caused by component tolerances, parasitic effects, and non-ideal MOSFET characteristics. Iteratively refined circuit parameters based on experimental feedback, reinforcing a hardware-first, measurement-driven engineering approach.",
     bullets: [
-      "Designed and analyzed MOSFET biasing conditions",
-      "Implemented and tested amplifier configurations",
-      "Compared theoretical predictions with measurements",
-      "Investigated non-ideal effects and component tolerances",
+      "Designed and analyzed MOSFET biasing conditions to ensure stable operation",
+      "Simulated amplifier configurations to predict gain and operating behavior",
+      "Implemented and tested MOSFET amplifier circuits in the laboratory",
+      "Compared theoretical and simulated results with experimental measurements",
+      "Investigated non-ideal effects and component tolerances in real circuits",
     ],
     tags: ["Orcad", "Python", "Java", "Matlab"],
     bgGradient: "linear-gradient(135deg, #141e30 0%, #243b55 50%, #2d6a4f 100%)",
@@ -107,18 +116,19 @@ export const timelineEvents = [
   },
   {
     year: "May 2022",
-    title: "Logic Gate",
+    title: "Sensor-Driven Automatic Switching System",
     institution: "University of Utah",
     category: "Project",
     cardDescription:
       "Sensor-driven automatic switching system using logic gates and LDR for hardware-level control.",
     detailDescription:
-      "Designed a sensor-driven automatic switching system using logic gates and an LDR, translating environmental inputs into deterministic hardware-level control without microcontrollers. This project demonstrated fundamental digital logic design principles and sensor integration.",
+      "Designed and implemented a sensor-driven automatic switching system using discrete logic gates and a light-dependent resistor (LDR) to achieve deterministic hardware-level control without a microcontroller. The system translated analog sensor signals into digital logic states through thresholding and logic gate combinations, enabling reliable automatic switching behavior based on environmental light conditions. Circuit functionality was verified through bench testing, ensuring stable operation, predictable switching thresholds, and noise-resistant behavior. This project emphasized hardware logic design, sensor interfacing, and low-level control implementation using purely combinational logic",
     bullets: [
-      "Designed automatic switching system with logic gates",
-      "Integrated LDR for environmental sensing",
-      "Implemented deterministic hardware-level control",
-      "Achieved microcontroller-free operation",
+      "Designed a sensor-driven automatic switching system using discrete logic gates",
+      "Integrated an LDR to convert environmental light conditions into control signals",
+      "Implemented deterministic hardware-level control without a microcontroller",
+      "Designed logic thresholding to translate analog sensor output into digital states",
+      "Demonstrated reliable, low-latency control using purely combinational logic",
     ],
     tags: ["Matlab", "Python", "JavaScript", "LTspice"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #533483 100%)",
@@ -176,14 +186,14 @@ export const timelineEvents = [
     cardDescription:
       "Independently designed and fabricated a centrifugal pump achieving 7.8 GPM flow rate.",
     detailDescription:
-      "Independently designed and fabricated a centrifugal pump achieving 7.8 GPM flow rate. Led the full workflow including performance analysis, CAD modeling, SolidWorks part design, fabrication, and experimental validation, gaining hands-on experience in fluid machinery design and system-level optimization.",
+      "Independently designed and fabricated a centrifugal pump from initial concept through experimental validation, achieving a measured flow rate of 7.8 gallons per minute. Led the complete design-to-fabrication workflow, including impeller geometry design, housing layout, and mechanical integration. Performed CAD modeling and assembly using SolidWorks, incorporating design iterations to optimize flow performance and mechanical reliability. Fabricated and assembled the pump prototype, then conducted experimental testing to evaluate flow rate and operational stability. Compared measured performance against design expectations and refined the design based on experimental feedback, demonstrating an end-to-end mechanical engineering approach from analysis to physical validation.",
     bullets: [
       "Achieved 7.8 GPM flow rate through optimized design",
       "Led complete design-to-fabrication workflow",
       "Performed CAD modeling and SolidWorks part design",
       "Conducted performance analysis and experimental validation",
     ],
-    tags: ["Experimental Validation", "AutoCad", "SolidWorks"],
+    tags: ["Experimental Validation", "AutoCad", "SolidWorks","Leadership"],
     bgGradient: "linear-gradient(135deg, #1b1b3a 0%, #2d2d6b 50%, #3949ab 100%)",
     bgImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
     contentImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
