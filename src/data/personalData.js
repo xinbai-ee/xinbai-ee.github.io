@@ -1,26 +1,22 @@
 export const personalData = {
-  name: "Dr. Alexandra Chen",
-  firstName: "Alexandra",
-  lastName: "Chen",
-  title: "Associate Professor of Computer Science",
-  institution: "Stanford University",
+  name: "Xin Bai",
+  firstName: "Xin",
+  lastName: "Bai",
+  title: "Mechanical Engineering, Electrical & Computer Engineering",
+  institution: "University Of Utah",
   department: "Department of Computer Science",
-  email: "achen@stanford.edu",
-  phone: "+1 (650) 723-2300",
-  office: "Gates Building, Room 256, Stanford, CA 94305",
-  bio: `I am an Associate Professor in the Department of Computer Science at Stanford University, 
-where I lead the Intelligent Systems Laboratory. My research spans the intersection of machine learning, 
-natural language processing, and human-computer interaction, with a focus on developing AI systems that 
-are both powerful and interpretable. I received my Ph.D. from Stanford in 2020, and previously held 
-positions at MIT CSAIL and Google Brain. My work has been recognized with an NSF CAREER Award, 
-a Sloan Research Fellowship, and multiple best paper awards at top-tier venues.`,
+  email: "u1299165@gmail.com",
+  phone: "+1 (801) 600-6681",
+  direction: "UAVs/Robotics/AI",
+  bio: `I am a hardware/software co-designer with a strong passion for UAVs and robotics, bringing extensive field experience into every stage of system development. Rather than defining myself by a list of skills, I focus on how I integrate hands-on deployment experience, system-level thinking, and cross-disciplinary engineering knowledge to solve real-world problems and create tangible value.
+
+My approach centers on understanding complex electromechanical and embedded systems holistically—not only in controlled lab settings, but in real operational environments. I combine hardware design, software development, sensor integration, and control optimization with on-site testing, troubleshooting, and iterative refinement to deliver practical, reliable, and field-ready solutions.
+
+Through repeated and strongly field deployments experience, system bring-up, and real-world validation, I have developed a strong ability to diagnose issues under pressure, adapt to environmental constraints, and translate operational feedback into technical improvements. I am driven by results, grounded in engineering rigor, and committed to turning ideas into measurable technical impact through hands-on execution..`,
   shortBio: "Researching the intersection of machine learning, NLP, and human-computer interaction to build interpretable AI systems.",
 
   socialLinks: [
-    { name: "Google Scholar", url: "https://scholar.google.com", icon: "scholar" },
-    { name: "GitHub", url: "https://github.com", icon: "github" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-    { name: "Personal Site", url: "https://example.com", icon: "globe" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/xin-bai-u1299165", icon: "linkedin" },
   ],
 
   stats: [
