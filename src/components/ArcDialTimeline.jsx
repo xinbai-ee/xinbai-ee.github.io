@@ -384,7 +384,7 @@ const ArcDialTimeline = ({ events, detailPath }) => {
                   ))}
                 </div>
               )}
-              {detailPath && (
+              {event.detailDescription && detailPath && (
                 <Link
                   to={`${detailPath}/${event.year}`}
                   className="card-see-more"

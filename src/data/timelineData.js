@@ -136,14 +136,6 @@ export const timelineEvents = [
     category: "Education",
     cardDescription:
       "Transitioned to ECE to build technical foundations for intelligent systems, robotics, and autonomous control.",
-    detailDescription:
-      "Driven by a forward-looking perspective and a strong curiosity about emerging technologies, I decided to transition my major to Electrical and Computer Engineering. As my interests evolved toward intelligent systems, computation, and automation, I recognized that future technological advances would be increasingly shaped by electronics, embedded computing, and software-hardware integration. This shift allowed me to build the technical foundation necessary to engage more deeply with modern engineering challenges.",
-    bullets: [
-      "Recognized the growing importance of electronics and embedded computing",
-      "Built foundations for robotics and autonomous systems",
-      "Developed skills in software-hardware integration",
-      "Prepared for intelligent control system design",
-    ],
     tags: ["Forward-Looking Mindset", "Intelligent Systems", "Electrical & Computer Engineering"],
     bgGradient: "linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #2c3e50 100%)",
     bgImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
@@ -188,8 +180,8 @@ export const timelineEvents = [
     ],
     tags: ["Experimental Validation", "AutoCad", "SolidWorks","Leadership"],
     bgGradient: "linear-gradient(135deg, #1b1b3a 0%, #2d2d6b 50%, #3949ab 100%)",
-    bgImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
+    bgImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
     showContentImageInCard: false,
   },
   {
@@ -199,14 +191,6 @@ export const timelineEvents = [
     category: "Education",
     cardDescription:
       "Began undergraduate studies building foundations in mechanics, materials, design, and manufacturing.",
-    detailDescription:
-      "In 2019, I formally began my undergraduate studies in Mechanical Engineering at the University of Utah. During this period, I built a solid foundation in core engineering disciplines, including mechanics, materials science, mechanical design, and manufacturing processes. Through extensive laboratory work and project-based learning, I developed strong skills in engineering modeling, problem decomposition, and experimental validation. As my studies progressed, I recognized that complex engineering systems require control, computation, and intelligent decision-making.",
-    bullets: [
-      "Built foundation in mechanics and materials science",
-      "Developed mechanical design and manufacturing skills",
-      "Practiced engineering modeling and problem decomposition",
-      "Recognized importance of computation in modern systems",
-    ],
     tags: ["Systems Engineering", "Design Methodology", "Mechanical Engineering"],
     bgGradient: "linear-gradient(135deg, #0c1445 0%, #1a237e 50%, #283593 100%)",
     bgImage: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80",
