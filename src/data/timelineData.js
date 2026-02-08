@@ -38,7 +38,7 @@ export const timelineEvents = [
     tags: ["Pspice", "RF System", "Power Electronics", "Algorithms","Wireless charging"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
     bgImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/69886a621e581.webp",
     showContentImageInCard: false,
   },
   {
@@ -59,7 +59,7 @@ export const timelineEvents = [
     tags: ["AutoCad", "Semiconductor", "MEMS", "Micro Sensor", "Comsol"],
     bgGradient: "linear-gradient(135deg, #1a2a3a 0%, #2c4a6a 50%, #3a7ca5 100%)",
     bgImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/69886b860c5c6.webp",
     showContentImageInCard: false,
   },
   {
@@ -82,21 +82,21 @@ export const timelineEvents = [
     tags: ["PCB", "Python", "Pspice"],
     bgGradient: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
     bgImage: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/69886c8500dc4.webp",
     showContentImageInCard: false,
   },
   {
     year: "Aug 2022",
-    title: "MOSFET & Amplifier",
+    title: "Spirogravitator",
     institution: "University of Utah",
     category: "Laboratory",
     cardDescription:
       "MOSFET device behavior and amplifier circuits through simulation and hands-on laboratory validation.",
     detailDescription:
-      "Designed and implemented MOSFET-based amplifier circuits with a focus on practical performance and hardware validation. Selected device operating points and biasing networks to ensure stable operation under real component constraints, and verified design choices through circuit simulation. Built and debugged the amplifier circuits in the laboratory, performing systematic measurements to evaluate gain, bias stability, and signal integrity. Identified and addressed discrepancies between simulated and measured behavior caused by component tolerances, parasitic effects, and non-ideal MOSFET characteristics. Iteratively refined circuit parameters based on experimental feedback, reinforcing a hardware-first, measurement-driven engineering approach.",
+      "Designed and implemented MOSFET-based amplifier circuits to experimentally investigate device and circuit behavior using a double-spiral test structure. Defined biasing conditions and amplifier configurations to drive the spiral geometry under controlled operating regions, and analyzed circuit response through simulation prior to hardware implementation. Built and tested the amplifier circuits in the laboratory, using the double-spiral structure to observe real-world effects such as parasitics, loading, and non-ideal device behavior. Compared simulated predictions with measured results, and analyzed discrepancies arising from layout-induced effects, component tolerances, and MOSFET non-idealities. This experiment emphasized hardware-level validation, structure-dependent behavior, and measurement-driven analysis in analog circuit design",
     bullets: [
       "Designed and analyzed MOSFET biasing conditions to ensure stable operation",
-      "Simulated amplifier configurations to predict gain and operating behavior",
+      "Investigated amplifier behavior using a double-spiral experimental structure",
       "Implemented and tested MOSFET amplifier circuits in the laboratory",
       "Compared theoretical and simulated results with experimental measurements",
       "Investigated non-ideal effects and component tolerances in real circuits",
@@ -104,7 +104,7 @@ export const timelineEvents = [
     tags: ["Orcad", "Python", "Java", "Matlab"],
     bgGradient: "linear-gradient(135deg, #141e30 0%, #243b55 50%, #2d6a4f 100%)",
     bgImage: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698870d19a7f7.webp",
     showContentImageInCard: false,
   },
   {
@@ -126,7 +126,7 @@ export const timelineEvents = [
     tags: ["Matlab", "Python", "JavaScript", "LTspice"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #533483 100%)",
     bgImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698870d0f28a5.webp",
     showContentImageInCard: false,
   },
   {
@@ -160,7 +160,7 @@ export const timelineEvents = [
     tags: ["Experimental Methods", "Data Analysis", "Physical Principles"],
     bgGradient: "linear-gradient(135deg, #1a2332 0%, #1e3a5f 50%, #2962ff 100%)",
     bgImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698873789aab6.webp",
     showContentImageInCard: false,
   },
   {
@@ -181,7 +181,7 @@ export const timelineEvents = [
     tags: ["Experimental Validation", "AutoCad", "SolidWorks","Leadership"],
     bgGradient: "linear-gradient(135deg, #1b1b3a 0%, #2d2d6b 50%, #3949ab 100%)",
     bgImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698870d175fb2.webp",
     showContentImageInCard: false,
   },
   {
