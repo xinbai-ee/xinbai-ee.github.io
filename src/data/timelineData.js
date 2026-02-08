@@ -17,7 +17,7 @@ export const timelineEvents = [
     tags: ["Ardupilot(APM)", "VScode", "Linux", "ROS2", "Gazebo", "PX4", "Slam"],
     bgGradient: "linear-gradient(135deg, #0f1729 0%, #1e3a5f 50%, #c8a84e 100%)",
     bgImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/6987e3ca928f2.webp",
     showContentImageInCard: false,
   },
   {
