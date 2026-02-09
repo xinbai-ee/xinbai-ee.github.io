@@ -1,4 +1,4 @@
-import { useRef, useCallback } from "react";
+import { useRef, useCallback, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -15,7 +15,18 @@ const ARC_PATH =
     ? "M 25,30 C 188,180 188,520 25,670"
     : "M 25,30 L 25,670";
 
+/** Number of items to render above/below the current center (only visible window is in DOM). */
+const VISIBLE_WINDOW_BUFFER = 2;
+
 const ArcDialTimeline = ({ events, detailPath }) => {
+  const N = events.length;
+  const [visibleRange, setVisibleRange] = useState(() => ({
+    start: 0,
+    end: Math.min(N - 1, 2 * VISIBLE_WINDOW_BUFFER),
+  }));
+  const lastVisibleStartRef = useRef(visibleRange.start);
+  const lastVisibleEndRef = useRef(visibleRange.end);
+
   const viewportRef = useRef(null);
   const cardRefs = useRef([]);
   const arcTrackRef = useRef(null);
@@ -62,7 +73,6 @@ const ArcDialTimeline = ({ events, detailPath }) => {
 
   useGSAP(
     () => {
-      const N = events.length;
       if (N === 0) return;
 
       const ARC_RADIUS = ARC_SHAPE === "curve" ? 1000 : 0;
@@ -138,6 +148,17 @@ const ArcDialTimeline = ({ events, detailPath }) => {
           const progress = self.progress;
           const centerIdx = progress * (N - 1);
           const activeIdx = Math.round(centerIdx);
+
+          const newStart = Math.max(0, Math.floor(centerIdx) - VISIBLE_WINDOW_BUFFER);
+          const newEnd = Math.min(N - 1, Math.ceil(centerIdx) + VISIBLE_WINDOW_BUFFER);
+          if (
+            newStart !== lastVisibleStartRef.current ||
+            newEnd !== lastVisibleEndRef.current
+          ) {
+            lastVisibleStartRef.current = newStart;
+            lastVisibleEndRef.current = newEnd;
+            setVisibleRange({ start: newStart, end: newEnd });
+          }
 
           cardRefs.current.forEach((card, i) => {
             if (!card) return;
@@ -227,30 +248,34 @@ const ArcDialTimeline = ({ events, detailPath }) => {
     <section className="timeline-section">
       <div className="timeline-viewport" ref={viewportRef}>
         <div className="timeline-backgrounds">
-          {events.map((event, i) => (
-            <div
-              key={i}
-              className={`timeline-bg ${event.bgImage ? "timeline-bg-image" : ""}`}
-              ref={(el) => setBgRef(el, i)}
-              style={
-                event.bgImage
-                  ? { backgroundImage: `url(${event.bgImage})` }
-                  : { background: event.bgGradient }
-              }
-            />
-          ))}
+          {events
+            .slice(visibleRange.start, visibleRange.end + 1)
+            .map((event, i) => {
+              const actualIndex = visibleRange.start + i;
+              return (
+                <div
+                  key={actualIndex}
+                  className={`timeline-bg ${event.bgImage ? "timeline-bg-image" : ""}`}
+                  ref={(el) => setBgRef(el, actualIndex)}
+                  style={
+                    event.bgImage
+                      ? { backgroundImage: `url(${event.bgImage})` }
+                      : { background: event.bgGradient }
+                  }
+                />
+              );
+            })}
           <div className="timeline-overlay" />
         </div>
 
         <div className="arc-dial">
           <svg viewBox="0 0 140 700" preserveAspectRatio="xMidYMid meet">
             {(() => {
-              const N = events.length;
               const MINOR_PER_GAP = 4;
               const marks = [];
               for (let i = 0; i < N; i++) {
                 const y =
-                N > 1 ? 30 + (i / (N - 1)) * 640 : 30;
+                  N > 1 ? 30 + (i / (N - 1)) * 640 : 30;
                 marks.push(
                   <line
                     key={`major-${i}`}
@@ -339,62 +364,67 @@ const ArcDialTimeline = ({ events, detailPath }) => {
         </div>
 
         <div className="timeline-cards-container">
-          {events.map((event, i) => (
-            <div
-              key={i}
-              className="timeline-card"
-              ref={(el) => setCardRef(el, i)}
-            >
-              <div className="card-header">
-                <span className="card-year-badge">{event.year}</span>
-                {event.category && (
-                  <span className="card-category-badge">{event.category}</span>
-                )}
-              </div>
-              <h3 className="card-title">{event.title}</h3>
-              {event.institution && (
-                <div className="card-institution">
-                  <MapPin size={14} />
-                  <span>{event.institution}</span>
-                </div>
-              )}
-              {event.showContentImageInCard && event.contentImage && (
-                <div className="card-image-wrapper">
-                  <img src={event.contentImage} alt={event.title} className="card-image" />
-                </div>
-              )}
-              <SafeHtml 
-                html={event.cardDescription || event.description} 
-                tagName="p" 
-                className="card-description" 
-              />
-              {event.bullets && event.bullets.length > 0 && (
-                <ul className="card-bullets">
-                  {event.bullets.map((bullet, j) => (
-                    <li key={j}>{bullet}</li>
-                  ))}
-                </ul>
-              )}
-              {event.tags && (
-                <div className="card-tags">
-                  {event.tags.map((tag, j) => (
-                    <span key={j} className="card-tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-              {event.detailDescription && detailPath && (
-                <Link
-                  to={`${detailPath}/${event.year}`}
-                  className="card-see-more"
+          {events
+            .slice(visibleRange.start, visibleRange.end + 1)
+            .map((event, i) => {
+              const actualIndex = visibleRange.start + i;
+              return (
+                <div
+                  key={actualIndex}
+                  className="timeline-card"
+                  ref={(el) => setCardRef(el, actualIndex)}
                 >
-                  See more
-                  <ArrowRight size={16} />
-                </Link>
-              )}
-            </div>
-          ))}
+                  <div className="card-header">
+                    <span className="card-year-badge">{event.year}</span>
+                    {event.category && (
+                      <span className="card-category-badge">{event.category}</span>
+                    )}
+                  </div>
+                  <h3 className="card-title">{event.title}</h3>
+                  {event.institution && (
+                    <div className="card-institution">
+                      <MapPin size={14} />
+                      <span>{event.institution}</span>
+                    </div>
+                  )}
+                  {event.showContentImageInCard && event.contentImage && (
+                    <div className="card-image-wrapper">
+                      <img src={event.contentImage} alt={event.title} className="card-image" />
+                    </div>
+                  )}
+                  <SafeHtml 
+                    html={event.cardDescription || event.description} 
+                    tagName="p" 
+                    className="card-description" 
+                  />
+                  {event.bullets && event.bullets.length > 0 && (
+                    <ul className="card-bullets">
+                      {event.bullets.map((bullet, j) => (
+                        <li key={j}>{bullet}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {event.tags && (
+                    <div className="card-tags">
+                      {event.tags.map((tag, j) => (
+                        <span key={j} className="card-tag">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {event.detailDescription && detailPath && (
+                    <Link
+                      to={`${detailPath}/${event.year}`}
+                      className="card-see-more"
+                    >
+                      See more
+                      <ArrowRight size={16} />
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
         </div>
 
         <div className="timeline-progress-bar">
