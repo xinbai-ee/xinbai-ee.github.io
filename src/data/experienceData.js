@@ -60,7 +60,7 @@ export const experienceEvents = [
     bgImage:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
     contentImage:
-      "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/6987de324ce8a.webp",
+      "https://imgur.com/a/njsKtk1",
     showContentImageInCard: true, // 控制图片是否在卡片中展示
   },
   {
