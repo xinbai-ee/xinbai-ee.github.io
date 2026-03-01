@@ -17,7 +17,7 @@ export const timelineEvents = [
     tags: ["Ardupilot(APM)", "VScode", "Linux", "ROS2", "Gazebo", "PX4", "Slam"],
     bgGradient: "linear-gradient(135deg, #0f1729 0%, #1e3a5f 50%, #c8a84e 100%)",
     bgImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/6987e3ca928f2.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a41031dc8a7.png",
     showContentImageInCard: false,
   },
   {
@@ -38,7 +38,7 @@ export const timelineEvents = [
     tags: ["Pspice", "RF System", "Power Electronics", "Algorithms","Wireless charging"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #2d3436 50%, #636e72 100%)",
     bgImage: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/69886a621e581.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a41098658d3.jpg",
     showContentImageInCard: false,
   },
   {
@@ -59,7 +59,7 @@ export const timelineEvents = [
     tags: ["AutoCad", "Semiconductor", "MEMS", "Micro Sensor", "Comsol"],
     bgGradient: "linear-gradient(135deg, #1a2a3a 0%, #2c4a6a 50%, #3a7ca5 100%)",
     bgImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/69886b860c5c6.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a410d18893a.png",
     showContentImageInCard: false,
   },
   {
@@ -82,7 +82,7 @@ export const timelineEvents = [
     tags: ["PCB", "Python", "Pspice"],
     bgGradient: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
     bgImage: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/69886c8500dc4.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a4102fb96cd.png",
     showContentImageInCard: false,
   },
   {
@@ -104,7 +104,7 @@ export const timelineEvents = [
     tags: ["Orcad", "Python", "Java", "Matlab"],
     bgGradient: "linear-gradient(135deg, #141e30 0%, #243b55 50%, #2d6a4f 100%)",
     bgImage: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698870d19a7f7.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a4103044a37.jpg",
     showContentImageInCard: false,
   },
   {
@@ -126,7 +126,7 @@ export const timelineEvents = [
     tags: ["Matlab", "Python", "JavaScript", "LTspice"],
     bgGradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #533483 100%)",
     bgImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698870d0f28a5.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a4102f8d185.png",
     showContentImageInCard: false,
   },
   {
@@ -160,7 +160,7 @@ export const timelineEvents = [
     tags: ["Experimental Methods", "Data Analysis", "Physical Principles"],
     bgGradient: "linear-gradient(135deg, #1a2332 0%, #1e3a5f 50%, #2962ff 100%)",
     bgImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698873789aab6.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a4112f6968e.png",
     showContentImageInCard: false,
   },
   {
@@ -181,7 +181,7 @@ export const timelineEvents = [
     tags: ["Experimental Validation", "AutoCad", "SolidWorks","Leadership"],
     bgGradient: "linear-gradient(135deg, #1b1b3a 0%, #2d2d6b 50%, #3949ab 100%)",
     bgImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80",
-    contentImage: "https://youke.xn--y7xa690gmna.cn/s1/2026/02/08/698870d175fb2.webp",
+    contentImage: "https://www.helloimg.com/i/2026/03/01/69a41030e8d95.png",
     showContentImageInCard: false,
   },
   {
