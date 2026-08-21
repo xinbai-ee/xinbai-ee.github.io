@@ -54,7 +54,7 @@ const Navbar = () => {
             Experience
           </NavLink>
           <a
-            href="/CV.pdf"
+            href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link cv-link"
