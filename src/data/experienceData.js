@@ -2,11 +2,11 @@ export const experienceEvents = [
   {
     year: 2026,
     title: "Project Engineer",
-    institution: "Utah,United States",
+    institution: "Texas,United States",
     category: "Quicktron Automation",
     description:
-      "Volunteered in Professor Kim’s research group, contributing to ongoing research through hands-on engineering support and experimental validation. My work focused on assisting with system integration, data collection, and performance evaluation for research projects involving sensing, control, and autonomous systems. This experience strengthened my ability to work in a research-driven environment, translate theoretical concepts into practical implementation, and collaborate closely with faculty on technically rigorous projects.",
-    tags: ["Linux", "ROS", "Robotics Control Systems", "C++"],
+      "Worked in a fast-paced, production-driven environment, contributing to the full lifecycle delivery of a large-scale AGV/AMR automation project—from infrastructure setup and system integration to commissioning, UAT, successful go-live, and post-deployment maintenance support. My work focused on RCS fleet configuration, API-based integration with factory systems, task dispatch validation, and end-to-end operational testing. I used FinalShell to access Linux/ROS environments, analyze system logs, and troubleshoot issues across software, hardware, networking, LiDAR sensors, PLCs, motor controllers, and AGV subsystems. Following go-live, I provided on-site production and maintenance support, rapidly identifying root causes and resolving technical issues to minimize downtime and maintain stable fleet operations. This experience strengthened my ability to deliver complete robotics automation projects under tight timelines and real-world production constraints.",
+    tags: ["Linux", "ROS", "Robotics Control Systems", "C++","AGV/AMR"],
     bgGradient:
       "linear-gradient(135deg, #1a2332 0%, #1e3a5f 50%, #2962ff 100%)",
     bgImage:
