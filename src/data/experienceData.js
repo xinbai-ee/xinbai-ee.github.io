@@ -1,5 +1,21 @@
 export const experienceEvents = [
   {
+    year: 2026,
+    title: "Project Engineer",
+    institution: "Utah,United States",
+    category: "Quicktron Automation",
+    description:
+      "Volunteered in Professor Kim’s research group, contributing to ongoing research through hands-on engineering support and experimental validation. My work focused on assisting with system integration, data collection, and performance evaluation for research projects involving sensing, control, and autonomous systems. This experience strengthened my ability to work in a research-driven environment, translate theoretical concepts into practical implementation, and collaborate closely with faculty on technically rigorous projects.",
+    tags: ["Linux", "ROS", "Robotics Control Systems", "C++"],
+    bgGradient:
+      "linear-gradient(135deg, #1a2332 0%, #1e3a5f 50%, #2962ff 100%)",
+    bgImage:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    contentImage:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    showContentImageInCard: false,
+  },
+  {
     year: 2025,
     title: "Research Volunteer",
     institution: "Utah,United States",
