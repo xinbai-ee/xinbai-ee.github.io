@@ -111,6 +111,21 @@
   font-style: italic;
 }
 
+/* Visitor stats */
+.footer-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-stats-divider {
+  opacity: 0.5;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer-grid {

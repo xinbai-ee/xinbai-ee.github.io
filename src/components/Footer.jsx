@@ -65,6 +65,16 @@ const Footer = () => (
         <p>&copy; {new Date().getFullYear()} {personalData.name}. All rights reserved.</p>
         <p className="footer-note">Built for academic demonstration purposes.</p>
       </div>
+
+      <div className="footer-stats">
+        <span>
+          本站总访问量 <span id="vercount_value_site_pv">Loading</span> 次
+        </span>
+        <span className="footer-stats-divider">|</span>
+        <span>
+          本站总访客数 <span id="vercount_value_site_uv">Loading</span> 人
+        </span>
+      </div>
     </div>
   </footer>
 )
