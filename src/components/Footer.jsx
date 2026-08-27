@@ -66,6 +66,7 @@ const Footer = () => (
         <p className="footer-note">Built for academic demonstration purposes.</p>
       </div>
 
+      {/* Vercount stats - hidden for now, tracking still active
       <div className="footer-stats">
         <span>
           本站总访问量 <span id="vercount_value_site_pv">Loading</span> 次
@@ -75,6 +76,7 @@ const Footer = () => (
           本站总访客数 <span id="vercount_value_site_uv">Loading</span> 人
         </span>
       </div>
+      */}
     </div>
   </footer>
 )
